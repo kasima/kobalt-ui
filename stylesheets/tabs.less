@@ -28,7 +28,7 @@
     height: @tab-bottom-border-height;
     left: 0;
     right: 0;
-    background-color: @tab-background-color-active;
+    background-color: @tab-background-color-active-inactive-pane;
     border-bottom: 1px solid @tab-bar-bottom-border-color;
     pointer-events: none;
   }
@@ -60,22 +60,16 @@
       height: @tab-height;
     }
 
-    // left angled edge
+    // left tab edge
     &:before {
       left: -14px;
       border-left: 1px solid @tab-border-color;
-      // border-top-left-radius: @tab-radius;
-      // box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
-      // -webkit-transform: skewX(-@tab-skew);
     }
 
-    // right angled edge
+    // right tab edge
     &:after {
       right: -14px;
       border-right: 1px solid @tab-border-color
-      // border-top-right-radius: @tab-radius;
-      // box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
-      // -webkit-transform: skewX(@tab-skew);
     }
 
     .close-icon {
@@ -111,7 +105,6 @@
   .tab.active {
     z-index: 1;
     color: @text-color-highlight;
-    // box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
 
     .close-icon {
       line-height: @tab-height - 1px;
@@ -119,18 +112,8 @@
     }
 
     &, &:before, &:after {
-      // background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
-      background-color: @tab-background-color-active;
+      background-color: @tab-background-color-active-inactive-pane;
       height: @tab-height;
-      // height: @tab-height + 1px;
-    }
-
-    &:before {
-      // box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
-    }
-
-    &:after {
-      // box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
     }
   }
 
@@ -152,6 +135,19 @@
     pointer-events: none;
     &:after {
       top: @tab-height + @tab-top-padding + @tab-bottom-border-height - 2px;
+    }
+  }
+}
+
+.pane.active {
+  .tab-bar {
+    &:after {
+      background-color: @tab-background-color-active;
+    }
+  }
+  .tab.active {
+    &, &:before, &:after {
+      background-color: @tab-background-color-active;
     }
   }
 }
