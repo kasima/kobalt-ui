@@ -1,6 +1,8 @@
 # Atom Kobalt UI theme
 
-Kobalt UI theme for Atom that matches the [Kobalt syntax theme](https://github.com/kasima/kobalt).
+Kobalt UI theme for Atom that pairs nicely with the [Kobalt syntax theme](https://atom.io/themes/kobalt).
+
+Get the [atom package](https://atom.io/themes/kobalt-ui).
 
 *Based on the [Atom Dark UI](https://github.com/atom/atom-dark-ui).*
 
