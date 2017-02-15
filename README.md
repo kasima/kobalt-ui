@@ -1,5 +1,9 @@
 # Atom Kobalt UI theme
 
+[![apm](https://img.shields.io/apm/dm/kobalt-ui.svg?style=flat-square)](https://atom.io/packages/kobalt-ui)
+[![apm](https://img.shields.io/apm/v/kobalt-ui.svg?style=flat-square)](https://atom.io/packages/kobalt-ui)
+[![apm](https://img.shields.io/apm/l/kobalt-ui.svg?style=flat-square)]()
+
 Kobalt UI theme for Atom that pairs nicely with the [Kobalt syntax theme](https://atom.io/themes/kobalt).
 
 Get the [atom package](https://atom.io/themes/kobalt-ui).

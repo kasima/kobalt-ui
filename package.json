@@ -7,5 +7,10 @@
   "repository": "https://github.com/kasima/kobalt-ui",
   "engines": {
     "atom": ">0.40.0"
-  }
+  },
+  "keywords": [
+    "ui",
+    "theme",
+    "cobalt"
+  ]
 }
